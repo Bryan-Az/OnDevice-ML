@@ -1,0 +1,1 @@
+Google's Teachable Machines platform is a user-friendly tool that allows individuals to create machine learning models without any coding knowledge. It enables users to train models using their own data and then use those models to classify new inputs. This repository contains separate folders for implementing Teachable Machines for audio, image, and pose recognition.
