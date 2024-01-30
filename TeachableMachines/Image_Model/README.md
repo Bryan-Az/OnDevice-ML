@@ -1,0 +1,1 @@
+Link to model: https://teachablemachine.withgoogle.com/models/NwM2_OsaB/
