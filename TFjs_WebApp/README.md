@@ -16,7 +16,11 @@ I then tested the same text input on the retrained model.
 
 ![Alt text](images/test_retrained_model.png)
 
-The probabilities vary slightly, although both comments were allowed through, therefore the model will need to be retrained further to consider this comment as spam input.
+The probabilities vary slightly and jumped from a probability of spam in the pretrained of 62.5% to 73% in the retrained model. 
+
+Although both comments were allowed through with the threshold of 75% being too high, therefore the model will need to be retrained further to consider this comment as spam input.
+
+![Alt text](images/retrained_probabilities.png)
 
 
 
