@@ -20,6 +20,7 @@ The probabilities vary slightly and jumped from a probability of spam in the pre
 
 Although both comments were allowed through with the threshold of 75% being too h, therefore the model will need to be retrained further to consider this comment as spam input.
 
+![Alt text](images/retrained_probabilities.png)
 
 
 
