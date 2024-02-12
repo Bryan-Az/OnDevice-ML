@@ -1,34 +1,45 @@
-# MediaPipe Image Generation
+# On-Device (Android) Image Generation
 
-This app is a demonstration and sample of using MediaPipe to generate new images based on a text input.
+This project is a generative image machine learning model built using Mediapipe for Android devices.
 
-There are three primary ways that you can use this new demo and MediaPipe Task:
+Below is a sample image. A video of the current WIP can be found in the /readme_examples folder.
 
-1.  Standard diffusion to generate new images based on a text prompt.
+## Image Demo
+![Alt text](readme_examples/generated_image.jpeg)
 
-![Diffusion example](images/diffusion.gif?raw=true "Diffusion example")
 
-    
-2.  Diffusion with a plugin that works with other existing tasks and models to provide structure for your new generations.
 
-![Plugin example](images/plugin.gif?raw=true "Plugin example")
-    
-3.  Diffusion with Low-Rank Adaptation (LoRA) weights that allow you to create images of specific concepts that you pre-define for your unique use-cases.
+## Project Structure
 
-![LoRA example](images/lora.gif?raw=true "LoRA example")
+The project structure is as follows:
 
-## Build the demo using Android Studio
+- `app`: This folder contains the Android application code.
+- `build`: This folder contains the build files and artifacts.
+- `gradle`: This folder contains the Gradle build configuration files.
+- `model`: This folder contains the machine learning model files.
 
-To perform image generation, you will need to download or build an image model that uses the Stable Diffusion v1.5 architecture. You can find a list of open models on the [official documentation page](https://developers.google.com/mediapipe/solutions/vision/image_generator#install_and_run_the_image_generator_demo_app).
+## Getting Started
 
-After you have your model downloaded, you can run the conversion script listed in the official documentation to prepare it for use with this sample application. You will also need to copy this converted model to your Android device.
+To get started with the project, follow these steps:
 
-Optionally, you can create a new set of weights to use with the LoRA option, adding a new and desired bias to your image generations. These weights will need to be stored on your Android device, and you can find a link to an official set of LoRA weights in the Task's documentation.
+1. Clone the repository.
+2. Open the project in Android Studio.
+3. Build and run the application on an Android device.
 
-### Building
+## Dependencies
 
-When your models/weights are ready, copy them to your development device. For this example the files are loaded into the `/data/local/tmp/image_generator/bins` directory.
+The project has the following dependencies:
 
-To use the face, edge, or depth plugins, you will need additional models stored in the app's `assets` directory. These will be automatically downloaded and installed with your APK through the `download_models.gradle` build script located in this project.
+- Mediapipe: [Link to Mediapipe](https://github.com/google/mediapipe)
 
-An example weights file can be found [here](https://storage.googleapis.com/mediapipe-models/image_generator/LoRA_weights/teapot_lora.task) for the key term 'monadikos teapot'.
+## Usage
+
+To use the generative image machine learning model, follow these steps:
+
+1. Install the application on an Android device.
+2. Launch the application.
+3. Follow the on-screen instructions to generate images using the machine learning model.
+
+## License
+
+This project is an implementation of the mediapipe software licensed under the Apache-2.0 license and further documentation and links to official development is in the app/README.md file.
